@@ -14,4 +14,21 @@ describe Euler do
     end
   end
 
+  context "problem_2" do
+    it "should return a kind of integer" do
+      euler = Euler.new
+      expect(euler.problem_2(10)).to be_a_kind_of(Integer)
+    end
+
+    it "sums even Fibonacci numbers under 10 should return 10" do
+      euler = Euler.new
+      expect(euler.problem_2(10)).to eq(10)
+    end
+
+    it "sums even Fibonacci numbers under 89 should return 44" do
+      euler = Euler.new
+      expect(euler.problem_2(89)).to eq(44)
+    end
+  end
+
 end
