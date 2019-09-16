@@ -31,4 +31,16 @@ describe Euler do
     end
   end
 
+  context "problem_3" do
+    it "should return a kind of integer" do
+      euler = Euler.new
+      expect(euler.problem_3(13195)).to be_a_kind_of(Integer)
+    end
+
+    it "should return 29 for 13195" do
+      euler = Euler.new
+      expect(euler.problem_3(13195)).to eq(29)
+    end
+  end
+
 end
